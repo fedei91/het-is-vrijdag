@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>'t is vrijdag?!'</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'vrijdag/style.css'%}" />
+  </head>
+  <body>
+    <p>'t is vrijdag?!</p>
+    {% if vrijdag %}
+    <h1>JA!</h1>
+
+    {% else %}
+    <h1>NEEN <br />:(</h1>
+
+    {% endif %}
+  </body>
+</html>
