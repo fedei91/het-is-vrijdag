@@ -22,17 +22,17 @@
           <form>
             <input autofocus id="name" placeholder="Vul uw naam in en druk op 'Enter'" type="text" />
           </form>
-          <p>'t is vrijdag?!</p>
+          <p>is 't vrijdag?!</p>
           <button onclick="hideDiv()">Klik op mij!</button>
             {% if vrijdag %}
             <div id="myDiv">
               <h1>JA!</h1>
+            </div>
+              {% else %}
+            <div id="myDiv">
+              <h1>NEEN :(</h1>
 
-            {% else %}
-            
-            <h1>NEEN <br />:(</h1>
-
-            {% endif %}
+              {% endif %}
             </div>
         </div>
         <div class="col-sm"></div>
